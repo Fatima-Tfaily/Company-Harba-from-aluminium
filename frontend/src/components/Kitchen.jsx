@@ -9,7 +9,9 @@ const Kitchen = () => {
 
   const handleDelete = (kitchenId) => {
     axios
-      .delete(`http://localhost:8000/kitchen/delete/${kitchenId}`)
+      .delete(
+        `https://backendaluminium.onrender.com/kitchen/delete/${kitchenId}`
+      )
       .then((response) => {
         console.log(response.data);
         if (response.data.success) {
@@ -26,7 +28,7 @@ const Kitchen = () => {
   };
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:8000/kitchen/getAll";
+    const apiUrl = "https://backendaluminium.onrender.com/kitchen/getAll";
     axios
       .get(apiUrl)
       .then((response) => {

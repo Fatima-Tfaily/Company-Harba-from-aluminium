@@ -4,7 +4,7 @@ const Vcabinet = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:8000/cabinets/getAll";
+    const apiUrl = "https://backendaluminium.onrender.com/cabinets/getAll";
     axios
       .get(apiUrl)
       .then((response) => {

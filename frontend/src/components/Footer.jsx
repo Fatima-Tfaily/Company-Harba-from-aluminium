@@ -41,7 +41,7 @@ const Footer = () => {
     window.open(link, "_blank");
   };
   return (
-    <div>
+    <div className="footer1">
       <div className="footer" id="contact">
         <div className="social">
           <h1 className="sous_title">Social Media</h1>

@@ -76,7 +76,7 @@
         
         .service{
             background-color: #f0f0f0;
-            padding-bottom: 50px;
+            padding-bottom: 0px;
         }
         
         .title{
@@ -147,7 +147,9 @@
         .li-footer{
         margin: 2%;
         }
-        
+        .footer1{
+            background-color: rgb(12,94,202);
+        }
         .footer_img{
             width: 50px;
             height: 50px;
@@ -187,9 +189,19 @@
         .footer_menu .ul-footer .li-footer:hover{
             color:gainsboro;
         }
+        .log a{
+            font-size: 35px;
+            margin: auto;
+            text-align: center;
+        }
+        .log{
+            padding-bottom: 30px;
+        }
+
         .made{
             color:rgb(12,94,202);
             font-size: 20px;
             text-align: center;
+            background-color: white;
         }
     }

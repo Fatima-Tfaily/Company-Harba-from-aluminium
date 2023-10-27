@@ -7,7 +7,7 @@ const Vother = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:8000/other/getAll";
+    const apiUrl = "https://backendaluminium.onrender.com/other/getAll";
     axios
       .get(apiUrl)
       .then((response) => {

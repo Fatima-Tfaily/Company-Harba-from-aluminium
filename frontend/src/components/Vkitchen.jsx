@@ -7,7 +7,7 @@ const Vkitchen = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:8000/kitchen/getAll";
+    const apiUrl = "https://backendaluminium.onrender.com/kitchen/getAll";
     axios
       .get(apiUrl)
       .then((response) => {

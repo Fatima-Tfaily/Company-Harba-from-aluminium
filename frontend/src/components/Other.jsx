@@ -8,7 +8,7 @@ const Other = () => {
 
   const handleDelete = (otherId) => {
     axios
-      .delete(`http://localhost:8000/other/delete/${otherId}`)
+      .delete(`https://backendaluminium.onrender.com/other/delete/${otherId}`)
       .then((response) => {
         console.log(response.data);
         if (response.data.success) {
@@ -25,7 +25,7 @@ const Other = () => {
   };
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:8000/other/getAll";
+    const apiUrl = "https://backendaluminium.onrender.com/other/getAll";
     axios
       .get(apiUrl)
       .then((response) => {
