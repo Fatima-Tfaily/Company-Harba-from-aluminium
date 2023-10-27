@@ -1,0 +1,65 @@
+.card {
+    background-color:white;
+    color: black;
+    border: 1px solid rgb(12,94,202);
+    width:200px;
+    height: 220px;
+    border-radius: 0%;
+    margin: 10px;
+    padding-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ h1{
+    color: rgb(12,94,202);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.dis_image{
+    margin-bottom: 10px;
+}
+
+.delete_button{
+    width:100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(12,94,202);
+    border-radius: 20px;
+    border:0px;
+    margin-top: 5px;
+}
+
+.dis_image{
+    width:200px;
+    margin:auto;
+    height:200px;
+    margin-bottom: 3px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:780px){
+    .card {
+        background-color:white;
+        color: black;
+        width:150px;
+        height: 220px;
+        border-radius: 0%;
+        margin: 20px;
+        border-radius: 0px;
+        border: none;
+    }
+
+    .dis_image{
+        width:150px;
+        height:200px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}

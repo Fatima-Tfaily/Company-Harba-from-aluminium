@@ -1,0 +1,49 @@
+*{margin: 0%;
+padding: 0%;
+}
+
+.service{
+    background-color: #f0f0f0;
+    padding-bottom: 50px;
+}
+
+.title{
+    font-size: 50px;
+    color:  rgb(12,94,202);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.p{
+    display: flex;
+    flex-direction: row;
+}
+
+.part1{
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 10%;
+}
+
+h2{
+    font-size: 35px;
+    color: rgb(12,94,202) ;
+}
+
+.ul_service{
+    list-style-type: disc;
+
+}
+
+li{
+    font-size: 25px;
+    color: Black;
+    margin-top: 15px;
+}
+
+.part2 img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}

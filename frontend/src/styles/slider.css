@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+ }
+ 
+ .slider-container {
+  position: relative; /* Change from 'absolute' to 'relative' */
+  width: 100%;
+  height:600px; /* Use viewport height for full-screen height */
+  overflow: hidden;
+ }
+ 
+ .slider-image {
+  position: absolute;
+  width: 100%;
+  height: 600px; /* Use 'auto' to maintain aspect ratio */
+  opacity: 0;
+  animation: slider 16s infinite; /* Add this line to apply the animation */
+  object-fit: cover;
+ }
+ 
+ .slider-image.active {
+  position: relative;
+  opacity: 1;}
+
+  .slider-image {
+    position: absolute;
+    width: 100%;
+    height: 600px; /* Use 'auto' to maintain aspect ratio */
+    opacity: 0;
+    animation: slider 16s infinite; /* Add this line to apply the animation */
+   }
