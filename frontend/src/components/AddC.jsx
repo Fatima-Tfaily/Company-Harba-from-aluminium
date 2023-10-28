@@ -12,10 +12,13 @@ const AddC = () => {
       const formData = new FormData();
       formData.append("image", image);
 
-      const response = await fetch("http://localhost:8000/cabinets/add", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://cack-aluminium.onrender.com/cabinets/add",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();

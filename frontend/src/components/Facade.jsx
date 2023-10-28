@@ -8,7 +8,7 @@ const Facades = () => {
 
   const handleDelete = (facadeId) => {
     axios
-      .delete(`http://localhost:8000/facade/delete/${facadeId}`)
+      .delete(`https://cack-aluminium.onrender.com/delete/${facadeId}`)
       .then((response) => {
         console.log(response.data);
         if (response.data.success) {
@@ -25,7 +25,7 @@ const Facades = () => {
   };
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:8000/facade/getAll";
+    const apiUrl = "https://cack-aluminium.onrender.com/facade/getAll";
     axios
       .get(apiUrl)
       .then((response) => {
