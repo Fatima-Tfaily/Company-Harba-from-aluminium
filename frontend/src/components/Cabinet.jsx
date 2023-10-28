@@ -8,9 +8,7 @@ const Cabinet = () => {
 
   const handleDelete = (cabinetId) => {
     axios
-      .delete(
-        `https://backendaluminium.onrender.com/cabinets/delete/${cabinetId}`
-      )
+      .delete(`http://localhost:8000/cabinets/delete/${cabinetId}`)
       .then((response) => {
         console.log(response.data);
         if (response.data.success) {
@@ -27,11 +25,12 @@ const Cabinet = () => {
   };
 
   const fetchData = () => {
-    const apiUrl = "https://backendaluminium.onrender.com/cabinets/getAll";
+    const apiUrl = "http://localhost:8000/cabinets/getAll";
     axios
       .get(apiUrl)
       .then((response) => {
-        setData(response.data.data);
+        const reversedData = [...response.data.data].reverse();
+        setData(reversedData);
         console.log(response.data);
       })
       .catch((error) => {

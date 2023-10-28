@@ -7,11 +7,12 @@ const Vkitchen = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    const apiUrl = "https://backendaluminium.onrender.com/kitchen/getAll";
+    const apiUrl = "http://localhost:8000/kitchen/getAll";
     axios
       .get(apiUrl)
       .then((response) => {
-        setData(response.data.data); // Access the data property in the response
+        const reversedData = [...response.data.data].reverse();
+        setData(reversedData); // Access the data property in the response
         console.log(response.data);
       })
       .catch((error) => {

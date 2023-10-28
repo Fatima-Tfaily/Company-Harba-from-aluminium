@@ -1,4 +1,5 @@
 import React from "react";
+import Video from "../components/Video";
 import Vkitchen from "../components/Vkitchen";
 import Vfacade from "../components/Vfacade";
 import Vcabinet from "../components/Vcabinet";
@@ -12,6 +13,7 @@ const Work = () => {
   return (
     <div className="work">
       <Header />
+      <Video />
       <Vkitchen />
       <Vcabinet />
       <Vfacade />

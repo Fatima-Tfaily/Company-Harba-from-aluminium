@@ -7,11 +7,12 @@ const Vother = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    const apiUrl = "https://backendaluminium.onrender.com/other/getAll";
+    const apiUrl = "http://localhost:8000/other/getAll";
     axios
       .get(apiUrl)
       .then((response) => {
-        setData(response.data.data);
+        const reversedData = [...response.data.data].reverse();
+        setData(reversedData);
         console.log(response.data);
       })
       .catch((error) => {

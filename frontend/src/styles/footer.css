@@ -53,14 +53,14 @@ a p{
 
 .footer_menu .ul-footer .li-footer a{
     font-size: 25px;
-    margin-bottom: 5px;
+    margin: 10px;
 }
 
 .log a{
     font-size: 25px;
-    margin-bottom: 5px;
-    margin-top: 0;
+    margin: 10px;
 }
+
 
 .footer_menu .ul-footer .li-footer:hover{
     color:gainsboro;

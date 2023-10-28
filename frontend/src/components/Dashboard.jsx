@@ -6,11 +6,19 @@ import Other from "./Other";
 import { useState } from "react";
 import "../styles/dashboard.css";
 import { Link } from "react-router-dom";
-import Facades from "./Facade";
 
 function Dashboard() {
   return (
     <div className="Dashboard">
+      <div className="responsive">
+        <p>
+          click to go a{" "}
+          <a>
+            <Link to="/">Home</Link>
+          </a>{" "}
+          page
+        </p>
+      </div>
       <div className="side-menu">
         <p className="dash-title">Dashboard</p>
         <ul className="dash-menu">

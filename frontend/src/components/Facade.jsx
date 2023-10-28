@@ -8,7 +8,7 @@ const Facades = () => {
 
   const handleDelete = (facadeId) => {
     axios
-      .delete(`https://backendaluminium.onrender.com/facade/delete/${facadeId}`)
+      .delete(`http://localhost:8000/facade/delete/${facadeId}`)
       .then((response) => {
         console.log(response.data);
         if (response.data.success) {
@@ -25,11 +25,12 @@ const Facades = () => {
   };
 
   const fetchData = () => {
-    const apiUrl = "https://backendaluminium.onrender.com/facade/getAll";
+    const apiUrl = "http://localhost:8000/facade/getAll";
     axios
       .get(apiUrl)
       .then((response) => {
-        setData(response.data.data);
+        const reversedData = [...response.data.data].reverse();
+        setData(reversedData);
         console.log(response.data);
       })
       .catch((error) => {

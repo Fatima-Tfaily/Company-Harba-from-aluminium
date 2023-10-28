@@ -8,7 +8,7 @@ const Other = () => {
 
   const handleDelete = (otherId) => {
     axios
-      .delete(`https://backendaluminium.onrender.com/other/delete/${otherId}`)
+      .delete(`http://localhost:8000/other/delete/${otherId}`)
       .then((response) => {
         console.log(response.data);
         if (response.data.success) {
@@ -25,11 +25,12 @@ const Other = () => {
   };
 
   const fetchData = () => {
-    const apiUrl = "https://backendaluminium.onrender.com/other/getAll";
+    const apiUrl = "http://localhost:8000/other/getAll";
     axios
       .get(apiUrl)
       .then((response) => {
-        setData(response.data.data);
+        const reversedData = [...response.data.data].reverse();
+        setData(reversedData);
         console.log(response.data);
       })
       .catch((error) => {
